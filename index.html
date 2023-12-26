@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>I, Palindrome, I</title>
-  </head>
 
-  <body>
-    <h1 id="testbtn">HI BRANDY I LOVE YOU</h1>
-    
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>I, Palindrome, I</title>
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="free code camp banner" />
+      <h1>Is it a Palindrome?</h1>
+    </header>
+    <div>
+      <p>Enter in text to check for a palindrome:</p>
+      <input id="text-input" title="palindrome-input" required />
+      <button id="check-btn" type="submit" title="submit-btn">Check</button>
+    </div>
+    <div id="result"></div>
+    <div>
+      <p><span aria-label="light bulb">💡</span>A
+        <dfn>
+          palindrome
+        </dfn> is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case,
+        and spacing.
+      </p>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
 </html>
