@@ -10,14 +10,22 @@ body {
   color: #ffffff;
 }
 
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   align-items: center;
+  position: relative;
+  text-align: center;
 }
 
 .code-logo {
@@ -39,6 +47,39 @@ body {
   box-shadow: 0 6px 6px #002ead;
 }
 
-.palindrome-box p {
+.palindrome-box label {
   color: black;
+}
+
+.definition-div {
+  width: min(100vw, 450px);
+  font-size: 1.3rem;
+  min-height: 140px;
+  background-color: #00471b;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid #5a01a7;
+}
+
+#check-btn {
+  width: 90px;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #5a01a7;
+  color: #fff;
+  cursor: pointer;
 }
