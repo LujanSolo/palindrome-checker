@@ -2,9 +2,17 @@
 const textInput = document.getElementById('text-input');
 const checkBtn = document.getElementById('check-btn');
 const result = document.getElementById('result');
-// You should have a div element with an id of result
-// When you click on the #check-btn element without entering a value into the #text-input element, an alert should appear with the text Please input a value
-// When the #text-input element only contains the letter A and the #check-btn element is clicked, the #result element should contain the text A is a palindrome
-// When the #text-input element contains the text eye and the #check-btn element is clicked, the #result element should contain the text eye is a palindrome
-// When the #text-input element contains the text _eye and the #check-btn element is clicked, the #result element should contain the text eye is a palindrome
-// When the #text-input element contains the text race car and the #check-btn element is clicked, the #result element should contain the text race car is a palindrome
+
+checkBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  let text = textInput.value;
+  console.log(text)
+
+  if(!text){
+    alert('Please input a value');
+  } else {
+    let cleanText = text.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+    console.log(cleanText);
+  }
+})
+//* Note: You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
