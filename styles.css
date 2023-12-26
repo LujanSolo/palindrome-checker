@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(3, 11, 34);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  text-decoration: underline;
+  color: hotpink;
+}
